@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи - подбор программы</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper container">
+      <!-- Логотип в хедере (Начало) -->
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="http://placehold.it/33x38" alt="Cat Energy - логотип" width="33" height="38"> <!-- Вместо img скорей всего будет SVG -->
+        </a>
+        <a class="page-header__logo-title logo-title" href="index.html">Cat Energy</a>
+      </div>
+      <!-- Логотип в хедере (Конец) -->
+
+      <!-- Навигация по сайту (Начало) -->
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="mian-nav__wrapper">
+          <ul class="main-nav__list site-nav-list">
+            <li class="site-nav-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-nav-list__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-nav-list__item site-nav-list__item--active">
+              <a>Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Навигация по сайту (Конец) -->
+    </div>
+  </header>
+
+  <main class="page-form">
+    <div class="page-form__wrapper container">
+      <h1 class="page-form__title main-title">Подбор программы</h1>
+
+      <!-- Анкета (Начало) -->
+      <section class="questionnaire">
+        <h2 class="visually-hidden">Заполнение анкетных данных!</h2>
+
+        <p class="questionnaire__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</p>
+
+        <!-- Фоорма заполнения анкеты (Начало) -->
+        <form class="questionnaire-form" action="https://echo.htmlacademy.ru" method="post">
+          <!-- Личные данные кота :) (Начало) -->
+          <div class="questionnaire-form__wrapper personal-data">
+            <ul class="personal-data__list">
+              <li class="personal-data__item">
+                <label class="personal-data__label" for="name">
+                  Имя
+                  <sup>*</sup>
+                </label>
+                <input class="personal-data__field" type="text" name="name" id="name" placeholder="Барсик">
+              </li>
+              <li class="personal-data__item">
+                <label class="personal-data__label" for="weight">
+                  Вес (кг):
+                  <sup>*</sup>
+                </label>
+                <input class="personal-data__field" type="text" name="weight" id="weight" placeholder="7">
+              </li>
+              <li class="personal-data__item">
+                <label class="personal-data__label" for="age">
+                  Возраст (лет):
+                  <sup>*</sup>
+                </label>
+                <input class="personal-data__field" type="text" name="age" id="age" placeholder="7">
+              </li>
+            </ul>
+          </div>
+          <!-- Личные данные кота :) (Конец) -->
+
+          <!-- Выбор программы (Начало) -->
+          <div class="questionnaire-form__wrapper select-program">
+            <ul class="select-program__list">
+              <li class="select-program__item">
+                <input class="visually-hidden select-program__radio" type="radio" value="reduce" name="programs" id="reduce">
+                <label class="select-program__label" for="reduce">Похудение</label>
+              </li>
+              <li class="select-program__item">
+                <input class="visually-hidden select-program__radio" type="radio" value="weight-gain" name="programs" id="weight-gain">
+                <label class="select-program__label" for="weight-gain">Набор массы</label>
+              </li>
+              <li class="select-program__item">
+                <input class="visually-hidden select-program__radio" type="radio" value="advice" name="programs" id="advice">
+                <label class="select-program__label" for="advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </div>
+          <!-- Выбор программы (Конец) -->
+
+          <!-- Контактные данные владельца (Начало) -->
+          <div class="questionnaire-form__wrapper contact-details">
+            <h2 class="contact-details__title">Контактные данные (владельца кота)</h2>
+            <ul class="contact-details__list">
+              <li class="contact-details__item">
+                <label class="contact-details__label" for="email">
+                  e-mail:
+                  <sup>*</sup>
+                </label>
+                <input class="contact-details__field" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+              </li>
+              <li class="contact-details__item">
+                <label class="contact-details__label" for="phone">
+                  Телефон:
+                  <sup>*</sup>
+                </label>
+                <input class="contact-details__field" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+              </li>
+            </ul>
+          </div>
+          <!-- Контактные данные владельца (Конец) -->
+
+          <!-- Оставить комментарий (Начало) -->
+          <div class="questionnaire-form__wrapper comments">
+            <h2 class="comments__title">Комментарий</h2>
+            <label class="visually-hidden" for="writeComments">Оставить комментарий: </label>
+            <textarea name="writeComments" id="writeComments" cols="20" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+          <!-- Оставить комментарий (Начало) -->
+
+          <!-- Дополнительно (Начало) -->
+          <div class="questionnaire-form__wrapper additionally">
+            <h2 class="additionally__title">Дополнительно</h2>
+
+            <ul class="additionally__list">
+              <li class="additionally__item">
+                <input class="visually-hidden additionally__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label class="additionally__label" for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="additionally__item">
+                <input class="visually-hidden additionally__checkbox" type="checkbox" name="water" id="water">
+                <label class="additionally__label" for="water">Питьевая вода</label>
+              </li>
+              <li class="additionally__item">
+                <input class="visually-hidden additionally__checkbox" type="checkbox" name="milk" id="milk">
+                <label class="additionally__label" for="milk">Молоко</label>
+              </li>
+              <li class="additionally__item">
+                <input class="visually-hidden additionally__checkbox" type="checkbox" name="vitamins" id="vitamins">
+                <label class="additionally__label" for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </div>
+          <!-- Дополнительно (Конец) -->
+
+          <button class="questionnaire-form__button button" type="submit">Отправить заявку</button>
+
+          <p class="questionnaire-form__required">
+            <sup>*</sup>
+            &mdash; Обязательные поля
+          </p>
+        </form>
+        <!-- Фоорма заполнения анкеты (Конец) -->
+      </section>
+      <!-- Анкета (Конец) -->
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <!-- Как нас найти (Начало) -->
+    <section class="page-footer__contacts contacts">
+      <h2 class="visually-hidden">Как нас найти:</h2>
+
+      <div class="contacts__company container">
+        <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
+        <p class="contacts__company-address">
+          ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург</p>
+      </div>
+
+      <div class="contacts__map">
+        <a class="contacts__map-link" href="https://goo.gl/maps/NqmwzRBr9Y22">
+          <img class="contacts__map-image" src="#" width="1345" height="645" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </a>
+      </div>
+    </section>
+    <!-- Как нас найти (Конец) -->
+
+    <!-- Логотип в подвале (Начало) -->
+    <div class="page-footer__logo">
+      <a class="page-footer__logo-link logo-title" href="index.html">Cat Energy</a>
+    </div>
+    <!-- Логотип в подвале (Конец) -->
+
+    <!-- Социальные сети (Начало) -->
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Социальные сети (Конец) -->
+
+    <!-- HTML Academy (Начало) -->
+    <div class="page-footer__copyrights copyrights">
+      <a class="copyrights__link" href="#">HTML Academy</a>
+
+      <a class="copyright__logo" href="#">
+        <img class="copyright__logo-image" src="#" alt="HTML Academy">
+      </a>
+    </div>
+    <!-- HTML Academy (Конец) -->
+  </footer>
+</body>
+</html>
