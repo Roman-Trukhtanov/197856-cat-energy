@@ -1,0 +1,21 @@
+@import "../variables";
+
+.container {
+  width: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: auto;
+    padding: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1200px;
+    padding: 20px;
+  }
+}

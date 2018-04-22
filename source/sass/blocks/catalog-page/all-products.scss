@@ -1,0 +1,22 @@
+@import "../../variables";
+
+.all-products__title {
+  font-family: "OsWald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: $title-color;
+}
+
+.all-products__subtitle {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.all-products__link {
+  background-color: $bg-grey;
+
+  color: $default-text-color;
+}

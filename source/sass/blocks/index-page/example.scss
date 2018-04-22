@@ -1,0 +1,59 @@
+@import "../../variables";
+
+.example {
+  background-color: $bg-grey;
+}
+
+.example__title {
+  font-family: "OsWald Regular", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: $title-color;
+}
+
+.example__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.example__value {
+  font-family: "OsWald Regular", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.example__description {
+  font-size: 12px;
+  font-family: 12px;
+}
+
+.example__cost {
+  font-family: "OsWald Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.example__after,
+.example__before {
+  border: none;
+
+  font-family: "OsWald Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  color: #000000;
+
+  cursor: pointer;
+}

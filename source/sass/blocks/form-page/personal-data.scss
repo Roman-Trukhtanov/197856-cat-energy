@@ -1,0 +1,28 @@
+@import "../../variables";
+
+.personal-data__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.personal-data__label {
+  font-family: "OsWald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: #222222;
+}
+
+.personal-data__field::placeholder {
+  font-family: "OsWald Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: #444444;
+}
