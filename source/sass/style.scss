@@ -1,0 +1,50 @@
+/* Шрифты (Начало)*/
+@import "fonts";
+/* Шрифты (Конец)*/
+/* Глобальные стили (Начало) */
+@import "scaffolding";
+/* Глобальные стили (Конец) */
+/* Общие блоки (Начало) */
+@import "blocks/container";
+@import "blocks/visually-hidden";
+@import "blocks/logo-title";
+@import "blocks/button";
+/* Общие блоки (Конец) */
+/* Шапка (Начало) */
+@import "blocks/header/page-header";
+@import "blocks/header/main-nav";
+@import "blocks/header/site-nav-list";
+/* Шапка (Конец) */
+/* Главная - контент (Начало) */
+@import "blocks/index-page/page-main";
+@import "blocks/index-page/promo-block";
+@import "blocks/index-page/program-cards";
+@import "blocks/index-page/advantages";
+@import "blocks/index-page/example";
+/* Главная - контент (Конец) */
+/* Каталог товаров (Начало) */
+@import "blocks/catalog-page/additional-goods";
+@import "blocks/catalog-page/additional-good";
+@import "blocks/catalog-page/all-products";
+@import "blocks/catalog-page/main-title";
+@import "blocks/catalog-page/page-catalog";
+@import "blocks/catalog-page/product";
+@import "blocks/catalog-page/products-catalog";
+@import "blocks/catalog-page/special-offer";
+/* Каталог товаров (Конец) */
+/* Подбор программы (Форма) (Начало) */
+@import "blocks/form-page/additionally";
+@import "blocks/form-page/comments";
+@import "blocks/form-page/contact-details";
+@import "blocks/form-page/page-form";
+@import "blocks/form-page/personal-data";
+@import "blocks/form-page/questionnaire";
+@import "blocks/form-page/questionnaire-form";
+@import "blocks/form-page/select-program";
+/* Подбор программы (Форма) (Конец) */
+/* Подвал (Начало) */
+@import "blocks/footer/page-footer";
+@import "blocks/footer/contacts";
+@import "blocks/footer/social";
+@import "blocks/footer/copyrights";
+/* Подвал (Конец) */

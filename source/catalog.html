@@ -2,7 +2,11 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи - каталог</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
@@ -10,9 +14,8 @@
       <!-- Логотип в хедере (Начало) -->
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="http://placehold.it/33x38" alt="Cat Energy - логотип" width="33" height="38"> <!-- Вместо img скорей всего будет SVG -->
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Cat Energy - логотип" width="191" height="38"> <!-- Вопрос: вместо img скорей всего будет инлайновый SVG? -->
         </a>
-        <a class="page-header__logo-title logo-title" href="index.html">Cat Energy</a>
       </div>
       <!-- Логотип в хедере (Конец) -->
 
@@ -49,7 +52,7 @@
           <li class="products-catalog__item">
             <article class="product">
               <a class="product__image-link" href="#">
-                <img class="product__image" src="http://placehold.it/140x144" alt="Cat Energy - курица" width="140" height="144">
+                <img class="product__image" src="img/chicken-small-mobile@1x.jpg" alt="Cat Energy - курица" width="140" height="144">
               </a>
 
               <div class="product__description">
@@ -79,7 +82,7 @@
           <li class="products-catalog__item">
             <article class="product">
               <a class="product__image-link" href="#">
-                <img class="product__image" src="http://placehold.it/140x144" alt="Cat Energy - курица" width="140" height="144">
+                <img class="product__image" src="img/chicken-big-mobile@1x.jpg" alt="Cat Energy - курица" width="140" height="144">
               </a>
 
               <div class="product__description">
@@ -109,7 +112,7 @@
           <li class="products-catalog__item">
             <article class="product">
               <a class="product__image-link" href="#">
-                <img class="product__image" src="http://placehold.it/140x144" alt="Cat Energy - рыба" width="140" height="144">
+                <img class="product__image" src="img/fish-small-mobile@1x.jpg" alt="Cat Energy - рыба" width="140" height="144">
               </a>
 
               <div class="product__description">
@@ -139,7 +142,7 @@
           <li class="products-catalog__item">
             <article class="product">
               <a class="product__image-link" href="#">
-                <img class="product__image" src="http://placehold.it/140x144" alt="Cat Energy - рыба" width="140" height="144">
+                <img class="product__image" src="img/fish-big-mobile@1x.jpg" alt="Cat Energy - рыба" width="140" height="144">
               </a>
 
               <div class="product__description">
@@ -169,7 +172,7 @@
           <li class="products-catalog__item">
             <article class="product">
               <a class="product__image-link" href="#">
-                <img class="product__image" src="http://placehold.it/140x144" alt="Cat Energy - гречка" width="140" height="144">
+                <img class="product__image" src="img/buckwheat-small-mobile@1x.jpg" alt="Cat Energy - гречка" width="140" height="144">
               </a>
 
               <div class="product__description">
@@ -199,7 +202,7 @@
           <li class="products-catalog__item">
             <article class="product">
               <a class="product__image-link" href="#">
-                <img class="product__image" src="http://placehold.it/140x144" alt="Cat Energy - гречка" width="140" height="144">
+                <img class="product__image" src="img/buckwheat-big-mobile@1x.jpg" alt="Cat Energy - гречка" width="140" height="144">
               </a>
 
               <div class="product__description">
@@ -229,7 +232,7 @@
           <li class="products-catalog__item">
             <article class="product">
               <a class="product__image-link" href="#">
-                <img class="product__image" src="http://placehold.it/140x144" alt="Cat Energy - рис" width="140" height="144">
+                <img class="product__image" src="img/rice-small-mobile@1x.jpg" alt="Cat Energy - рис" width="140" height="144">
               </a>
 
               <div class="product__description">
@@ -357,43 +360,47 @@
 
       <div class="contacts__map">
         <a class="contacts__map-link" href="https://goo.gl/maps/NqmwzRBr9Y22">
-          <img class="contacts__map-image" src="#" width="1345" height="645" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </a>
       </div>
     </section>
     <!-- Как нас найти (Конец) -->
 
-    <!-- Логотип в подвале (Начало) -->
-    <div class="page-footer__logo">
-      <a class="page-footer__logo-link logo-title" href="index.html">Cat Energy</a>
-    </div>
-    <!-- Логотип в подвале (Конец) -->
+    <div class="container">
+      <!-- Логотип в подвале (Начало) -->
+      <div class="page-footer__logo">
+        <a class="page-footer__logo-link logo-title">
+          <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy - логотип">
+        </a>
+      </div>
+      <!-- Логотип в подвале (Конец) -->
 
-    <!-- Социальные сети (Начало) -->
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        </li>
-      </ul>
-    </div>
-    <!-- Социальные сети (Конец) -->
+      <!-- Социальные сети (Начало) -->
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Социальные сети (Конец) -->
 
-    <!-- HTML Academy (Начало) -->
-    <div class="page-footer__copyrights copyrights">
-      <a class="copyrights__link" href="#">HTML Academy</a>
+      <!-- HTML Academy (Начало) -->
+      <div class="page-footer__copyrights copyrights">
+        <a class="copyrights__link" href="#">HTML Academy</a>
 
-      <a class="copyright__logo" href="#">
-        <img class="copyright__logo-image" src="#" alt="HTML Academy">
-      </a>
+        <a class="copyright__logo" href="#">
+          <img class="copyright__logo-image" src="#" alt="HTML Academy">
+        </a>
+      </div>
+      <!-- HTML Academy (Конец) -->
     </div>
-    <!-- HTML Academy (Конец) -->
   </footer>
 </body>
 </html>
