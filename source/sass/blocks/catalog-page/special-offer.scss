@@ -1,16 +1,17 @@
-@import "../../variables";
-
 .special-offer {
   min-height: 289px;
 
-  background-image: url("../../../img/gift-photo-mobile@1x.jpg");
+  background-color: #68B738;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .special-offer__description {
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-align: center;
 
   color: #ffffff;

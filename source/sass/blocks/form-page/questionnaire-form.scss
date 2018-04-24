@@ -1,12 +1,12 @@
-@import "../../variables";
-
 .questionnaire-form__button {
   width: 100%;
 }
 
 .questionnaire-form__required {
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 400;
   text-align: center;
 
   color: #444444;

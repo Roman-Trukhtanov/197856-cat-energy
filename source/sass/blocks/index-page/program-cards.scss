@@ -1,5 +1,3 @@
-@import "../../variables";
-
 .program-cards {
   background-color: $bg-grey;
 }
@@ -12,7 +10,6 @@
 }
 
 .program-cards__title {
-  font-family: "OsWald Regular", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37.02px;
   font-weight: 400;
@@ -22,7 +19,6 @@
 }
 
 .program-cards__link {
-  font-family: "OsWald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
