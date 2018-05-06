@@ -1,0 +1,50 @@
+.all-products {
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  border-top: 1px solid #ededed;
+
+  &::before {
+    content: "";
+    margin: 0 auto;
+    margin-bottom: 24px;
+
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../img/svg/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.2;
+  }
+}
+
+.all-products__title {
+  margin: 0;
+  margin-bottom: 7px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: $title-color;
+}
+
+.all-products__subtitle {
+  margin: 0;
+  margin-bottom: 21px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.all-products__link {
+  background-color: $bg-grey;
+
+  color: $default-text-color;
+}

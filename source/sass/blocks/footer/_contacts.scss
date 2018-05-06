@@ -1,0 +1,49 @@
+.contacts {
+  padding-top: 28px;
+}
+
+.contacts__company {
+  margin-bottom: 26px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__title {
+  width: 50%;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.contacts__company-address {
+  margin: 0;
+  width: 50%;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.contacts__map {
+  height: 362px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contacts__map-link {
+  overflow: hidden;
+
+  background-color: $bg-grey;
+}
+
+.contacts__map-image {
+  margin-top: -38px;
+}

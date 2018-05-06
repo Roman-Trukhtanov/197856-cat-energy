@@ -1,0 +1,18 @@
+.page-footer__wrapper {
+  background-color: $bg-grey;
+}
+
+.page-footer__inner {
+  padding-top: 38px;
+  padding-bottom: 22px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__logo {
+  margin-bottom: 29px;
+
+  display: flex;
+  justify-content: center;
+}

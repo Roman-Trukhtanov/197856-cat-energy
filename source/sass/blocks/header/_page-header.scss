@@ -1,0 +1,37 @@
+.page-header__wrapper {
+  border-bottom: 1px solid #e6e6e6;
+
+  .container {
+    padding-top: 11px;
+    padding-bottom: 13px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.page-header__menu-toggle {
+  padding: 0;
+  margin: 0;
+  margin-right: 3px;
+
+  display: block;
+  width: 18px;
+  height: 18px;
+
+  border: none;
+  background-color: transparent;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    background-image: url("../img/svg/icon-close.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

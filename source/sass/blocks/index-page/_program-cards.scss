@@ -1,0 +1,81 @@
+.program-cards__list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  list-style: none;
+}
+
+.program-cards__item {
+  padding: 23px 20px;
+  margin-bottom: 18px;
+
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  background-color: $bg-grey;
+}
+
+.program-cards__title {
+  margin: 0;
+  margin-left: 10px;
+
+  font-size: 24px;
+  line-height: 37.02px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: $title-color;
+}
+
+.program-cards__description {
+  margin: 0;
+  margin-bottom: 18px;
+  padding-top: 21px;
+  padding-bottom: 24px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+  border-bottom: 1px solid rgba(#000000, 0.1);
+}
+
+.program-cards__link {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  &::after {
+    content: "";
+
+    margin-left: 14px;
+
+    display: block;
+
+    width: 24px;
+    height: 11px;
+
+    background-image: url("../img/svg/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.program-cards__catalog-name {
+  margin-left: 0.2em;
+}

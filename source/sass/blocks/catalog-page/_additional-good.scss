@@ -1,4 +1,8 @@
+
 .additional-good__name {
+  margin: 0;
+  margin-bottom: 13px;
+
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -8,8 +12,16 @@
 }
 
 .additional-good__characteristics {
+  margin-bottom: 15px;
+
+  width: 100%;
+
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
+}
+
+.additional-good__characteristics-price {
+  text-align: right;
 }

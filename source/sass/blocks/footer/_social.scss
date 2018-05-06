@@ -1,0 +1,32 @@
+.social {
+  margin-bottom: 22px;
+  padding-top: 20px;
+  padding-bottom: 14px;
+
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  list-style: none;
+}
+
+.social__link {
+  width: 25px;
+  height: 25px;
+
+  display: inline-block;
+
+  background-color: #444444;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 30px;
+}
