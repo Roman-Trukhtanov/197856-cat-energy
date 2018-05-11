@@ -26,7 +26,8 @@
 
   color: #000000;
 
-  &[href]:hover {
+  &[href]:hover,
+  &[href]:focus {
     color: rgba(#000000, 0.6);
   }
 

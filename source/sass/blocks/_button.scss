@@ -14,4 +14,13 @@
   color: white;
 
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 }

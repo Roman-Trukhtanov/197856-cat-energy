@@ -44,7 +44,16 @@
 }
 
 .all-products__link {
-  background-color: $bg-grey;
+  background-color: #f2f2f2;
 
   color: $default-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba($default-text-color, 0.3);
+  }
 }

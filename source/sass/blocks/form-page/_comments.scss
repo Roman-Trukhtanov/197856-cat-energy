@@ -1,4 +1,21 @@
+.comments {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.comments__title-wrapper {
+  margin-bottom: 35px;
+  display: flex;
+
+  @include title-stroke;
+}
+
 .comments__title {
+  margin: 0;
+
+  flex-shrink: 0;
+  max-width: 185px;
+
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -7,12 +24,28 @@
 }
 
 .comments__text-area {
+  padding: 12px 13px;
   width: 100%;
 
-  font-size: 14px;
+  height: 150px;
+
+  font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
 
   color: #444444;
+
+  border: 1px solid #e6e6e6;
+  resize: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 1px solid #444444;
+  }
 }

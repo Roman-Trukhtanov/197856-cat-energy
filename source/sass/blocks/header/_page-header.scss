@@ -12,6 +12,17 @@
   }
 }
 
+.page-header__logo[href] {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .page-header__menu-toggle {
   padding: 0;
   margin: 0;
@@ -24,13 +35,29 @@
   border: none;
   background-color: transparent;
 
-  &::before {
+  &--close::before {
     content: "";
     display: block;
     width: 18px;
     height: 18px;
 
     background-image: url("../img/svg/icon-close.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--open {
+    width: 24px;
+    height: 18px;
+  }
+
+  &--open::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 18px;
+
+    background-image: url("../img/svg/icon-mobile-menu.svg");
     background-repeat: no-repeat;
     background-position: center center;
   }

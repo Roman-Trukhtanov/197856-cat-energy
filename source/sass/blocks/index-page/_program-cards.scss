@@ -72,8 +72,18 @@
 
     background-image: url("../img/svg/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
+    background-position: -5px 0;
+  }
+
+  &:hover::after,
+  &:focus::after {
     background-position: 0 0;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+
 }
 
 .program-cards__catalog-name {

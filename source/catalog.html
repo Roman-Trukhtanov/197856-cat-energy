@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta
     name="viewport"
-    content="width=device-width,initial-scale=1">
+    content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи - каталог</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,13 +17,13 @@
           <img class="page-header__logo-image" src="img/svg/logo-mobile.svg" alt="Cat Energy - логотип" width="191" height="38"> <!-- Вопрос: вместо img скорей всего будет инлайновый SVG? -->
         </a>
         <!-- Логотип в хедере (Конец) -->
-        <button class="page-header__menu-toggle" type="button">
+        <button class="page-header__menu-toggle page-header__menu-toggle--open" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
     </div>
     <!-- Навигация по сайту (Начало) -->
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="main-nav__list site-nav-list">
         <li class="site-nav-list__item ">
           <a href="index.html">Главная</a>
@@ -264,12 +264,12 @@
     <!-- Каталог продукции (Конец) -->
 
     <!-- Дополнительные товары (Начало) -->
-    <section class="additional-goods">
-      <h2 class="additional-goods__title">
-        <span class="additional-goods__title-wrapper">Дополнительные товары</span>
-      </h2>
+    <section class="additional-goods container">
+      <div class="additional-goods__title-wrapper ">
+        <h2 class="additional-goods__title">Дополнительные товары</h2>
+      </div>
 
-      <div class="additional-goods__wrapper container">
+      <div class="additional-goods__wrapper">
         <ul class="additional-goods__list">
           <li class="additional-goods__item">
             <article class="additional-good">
@@ -402,5 +402,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

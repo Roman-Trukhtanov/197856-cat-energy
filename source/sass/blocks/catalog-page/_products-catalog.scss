@@ -5,7 +5,11 @@
 .products-catalog__list {
   margin: 0;
   padding: 0;
-  margin-bottom: 7px;
+  margin-bottom: 23px;
 
   list-style: none;
+}
+
+.products-catalog__item:not(:last-child) {
+  margin-bottom: 23px;
 }
