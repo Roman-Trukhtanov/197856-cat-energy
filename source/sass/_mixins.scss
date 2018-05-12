@@ -3,11 +3,14 @@
     content: "";
     display: block;
 
+    position: absolute;
+    left: 0;
+
     margin-top: 14px;
-    margin-left: 20px;
-    margin-right: -20px;
     height: 3px;
-    width: 100%;
+    width: 100vw;
     background-color: $bg-green;
+
+    z-index: -1;
   }
 }

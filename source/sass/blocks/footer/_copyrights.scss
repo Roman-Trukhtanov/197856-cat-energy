@@ -22,3 +22,10 @@
   background-color: #666666;
   //-----------
 }
+
+@media (min-width: $tablet-width) {
+  .copyrights__link {
+    margin-right: 22px;
+    margin-bottom: 5px;
+  }
+}

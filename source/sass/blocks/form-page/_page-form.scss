@@ -6,3 +6,19 @@
 .page-form__title {
   margin-bottom: 26px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-form__wrapper {
+    padding-bottom: 72px;
+  }
+
+  .page-form__title {
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-form__wrapper {
+    padding-top: 32px;
+  }
+}

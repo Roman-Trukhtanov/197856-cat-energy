@@ -30,3 +30,20 @@
 .social__item:not(:last-child) {
   margin-right: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+  }
+
+  .social__item {
+    margin-left: 30px;
+  }
+
+  .social__item:not(:last-child) {
+    margin-right: 0;
+  }
+}

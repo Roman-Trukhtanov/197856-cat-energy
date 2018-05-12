@@ -3,7 +3,7 @@
 }
 
 .special-offer__wrapper {
-  min-height: 289px;
+  height: 289px;
 
   display: flex;
 
@@ -21,7 +21,7 @@
   margin: 0;
   margin-bottom: 43px;
 
-  width: 150px;
+  width: 165px;
 
   font-family: "Arial", sans-serif;
   font-size: 16px;
@@ -30,4 +30,45 @@
   text-align: center;
 
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .special-offer {
+    margin-bottom: 76px;
+  }
+
+  .special-offer__wrapper {
+    height: 200px;
+
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .special-offer__description {
+    margin: 0;
+    margin-right: 120px;
+    margin-top: 3px;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .special-offer {
+    margin: 0;
+    width: 245px;
+    height: 289px;
+  }
+
+  .special-offer__wrapper {
+    height: 289px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .special-offer__description {
+    margin: 0;
+    margin-bottom: 42px;
+    text-align: center;
+  }
 }
