@@ -12,20 +12,46 @@
   font-weight: 400;
 
   color: #444444;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.copyright__logo {
-  //Временные стили для иконки
+.copyrights__logo {
   display: block;
   width: 27px;
   height: 34px;
-  background-color: #666666;
-  //-----------
+
+  &:hover .copyrights__logo-image,
+  &:focus .copyrights__logo-image {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyrights__logo-image {
+  width: 27px;
+  height: 34px;
 }
 
 @media (min-width: $tablet-width) {
   .copyrights__link {
     margin-right: 22px;
     margin-bottom: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyrights__link {
+    margin-bottom: 0;
   }
 }
