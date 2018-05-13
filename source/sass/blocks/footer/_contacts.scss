@@ -41,11 +41,27 @@
 .contacts__map-link {
   overflow: hidden;
 
+  position: relative;
   background-color: $bg-grey;
-}
 
-.contacts__map-image {
-  margin-top: -38px;
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 129px;
+    top: 138px;
+
+    width: 62px;
+    height: 53px;
+
+    background-color: transparent;
+
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    background-size: cover;
+  }
 }
 
 @media (min-width: $tablet-width) {
