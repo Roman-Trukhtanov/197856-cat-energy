@@ -136,7 +136,7 @@
     width: 24px;
     height: 11px;
 
-    background-image: url("../imgicon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: -5px 0;
   }
@@ -157,7 +157,7 @@
 
 @media (min-width: $tablet-width) {
   .program-cards {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
   }
 
   .program-cards__item {
@@ -170,7 +170,40 @@
 
   .program-cards__logo {
     position: absolute;
-    right: 0;
+
+    &--slim {
+      right: 75px;
+      top: 80px;
+    }
+
+    &--pro {
+      right: 27px;
+      top: 135px;
+    }
+
+    &--slim::before {
+
+      width: 140px;
+      height: 194px;
+
+      z-index: 5;
+    }
+
+    &--pro::before {
+      width: 268px;
+      height: 112px;
+    }
+
+    &::after {
+      top: auto;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    &--slim::after {
+      margin-top: 15px;
+    }
   }
 
   .program-cards__title {
@@ -217,26 +250,71 @@
     padding-top: 38px;
     padding-left: 50px;
     padding-right: 55px;
+    padding-bottom: 62px;
     width: 570px;
   }
 
   .program-cards__logo {
-    margin-right: 24px;
-    position: static;
+    position: relative;
 
-    width: 140px;
-    height: 110px;
+    &--slim {
+      margin-left: 17px;
+      margin-right: 77px;
 
-    background-color: #68b738;
+      right: auto;
+      top: auto;
+    }
+
+    &--pro {
+      margin-top: 31px;
+      margin-right: 45px;
+      margin-left: -15px;
+
+      right: auto;
+      top: auto;
+    }
+
+    &--slim::before {
+
+      width: 70px;
+      height: 97px;
+
+      z-index: 5;
+    }
+
+    &--pro::before {
+      width: 134px;
+      height: 56px;
+    }
+
+    &::after {
+      top: auto;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim::after {
+      margin-top: 8px;
+    }
+  }
+
+  .program-cards__title {
+    margin-top: 13px;
+
+    &--pro {
+      margin-top: 23px;
+    }
   }
 
   .program-cards__description {
     margin-bottom: 7px;
     margin-left: 2px;
-    padding-top: 38px;
+    padding-top: 50px;
   }
 
   .program-cards__description--pro {
+    margin-top: 13px;
     width: auto;
   }
 

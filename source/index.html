@@ -65,7 +65,7 @@
 
           <picture>
             <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
             <img class="promo-block__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat Energy Pro- курица 500г">
           </picture>
 
@@ -81,7 +81,7 @@
           <ul class="program-cards__list">
             <li class="program-cards__item">
               <div class="program-cards__logo program-cards__logo--slim"></div>
-              <h3 class="program-cards__title">Похудение</h3>
+              <h3 class="program-cards__title program-cards__title--slim">Похудение</h3>
               <p class="program-cards__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="program-cards__link" href="catalog-slim.html">
                 Каталог <span class="program-cards__catalog-name">Slim</span>
@@ -89,7 +89,7 @@
             </li>
             <li class="program-cards__item">
               <div class="program-cards__logo program-cards__logo--pro"></div>
-              <h3 class="program-cards__title">Набор массы</h3>
+              <h3 class="program-cards__title program-cards__title--pro">Набор массы</h3>
               <p class="program-cards__description program-cards__description--pro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="program-cards__link" href="catalog-pro.html">
                 Каталог <span class="program-cards__catalog-name">Pro</span>
@@ -193,7 +193,10 @@
       </div>
 
       <div class="contacts__map">
-        <a class="contacts__map-link" href="https://goo.gl/maps/NqmwzRBr9Y22">
+        <div class="contacts__map-google-wrapper">
+          <iframe class="contacts__map-google" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.2970836258144!2d30.3219997!3d59.9388761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1526233818772" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <a class="contacts__map-link" href="https://goo.gl/maps/NqmwzRBr9Y22" target="_blank">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
@@ -218,13 +221,25 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
+                <svg class="social__icon social__icon--vk" width="22" height="12">
+                  <use xlink:href="#sprite-icon-vk"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
+                <svg class="social__icon social__icon--insta" width="16" height="16">
+                  <use xlink:href="#sprite-icon-insta"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
+                <svg class="social__icon social__icon--fb" width="10" height="19">
+                  <use xlink:href="#sprite-icon-fb"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -234,7 +249,9 @@
         <div class="page-footer__copyrights copyrights">
           <a class="copyrights__link" href="#">HTML Academy</a>
           <a class="copyrights__logo" href="#">
-            <!-- Будет SVG -->
+            <svg class="copyrights__logo-image" width="27" height="34">
+              <use xlink:href="#sprite-htmlacademy"></use>
+            </svg>
           </a>
         </div>
         <!-- HTML Academy (Конец) -->

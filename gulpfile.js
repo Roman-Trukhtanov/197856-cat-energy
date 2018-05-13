@@ -100,8 +100,8 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/*.html", ["html"]);
-  gulp.watch("source/js/*.js", ["minjs"]);
+  gulp.watch("source/*.html", ["html"]).on("change", server.reload);
+  gulp.watch("source/js/*.js", ["minjs"]).on("change", server.reload);
 });
 
 gulp.task("build", function(done) {

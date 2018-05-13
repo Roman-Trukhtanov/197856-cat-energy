@@ -63,7 +63,9 @@
 
 @media (min-width: $tablet-width) {
   .promo-block {
-    padding-top: 15px;
+    padding-top: 21px;
+    margin-bottom: 29px;
+
     min-height: 800px;
 
     &::before {
@@ -97,6 +99,8 @@
 
   .promo-block__image {
     position: absolute;
+    left: 28px;
+    top: 221px;
     z-index: -1;
   }
 
@@ -113,6 +117,7 @@
   .promo-block {
     min-height: 598px;
     padding-top: 66px;
+    margin-bottom: 22px;
   }
 
   .promo-block__wrapper {
@@ -124,8 +129,9 @@
   }
 
   .promo-block__image {
-    top: 0;
-    right: 350px;
+    left: auto;
+    top: -14px;
+    right: 258px;
   }
 
   .promo-block__link {

@@ -32,10 +32,25 @@
 
 .contacts__map {
   height: 362px;
+  position: relative;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.contacts__map-google-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 1;
+}
+
+.contacts__map-google {
+  height: 362px;
+  width: 100%;
 }
 
 .contacts__map-link {
@@ -75,6 +90,22 @@
     }
   }
 
+  .contacts__map {
+    height: 400px;
+  }
+
+  .contacts__map-google {
+    height: 400px;
+  }
+
+  .contacts__map-link::before {
+    left: 129px;
+    top: 138px;
+
+    width: 124px;
+    height: 106px;
+  }
+
   .contacts__company {
     margin-bottom: 57px;
     padding-left: 40px;
@@ -107,6 +138,7 @@
   }
 
   .contacts__wrapper {
+    z-index: 50;
     position: relative;
   }
 
@@ -125,8 +157,10 @@
     background-color: $bg-white;
   }
 
-  .contacts__map {
-    height: 400px;
+  .contacts__map-link::before {
+    left: auto;
+    top: 151px;
+    right: 318px;
   }
 
   .contacts__map-image {
