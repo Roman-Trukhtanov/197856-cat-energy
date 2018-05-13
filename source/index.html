@@ -14,7 +14,18 @@
       <div class="page-header__wrapper">
         <!-- Логотип в хедере (Начало) -->
           <a class="page-header__logo">
+<<<<<<< HEAD
             <img class="page-header__logo-image" src="img/svg/logo-mobile.svg" alt="Cat Energy - логотип" width="191" height="38">
+=======
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/svg/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+              <img class="page-header__logo-image"
+                   src="img/svg/logo-mobile.svg"
+                   alt="Cat Energy - логотип"
+                   width="191" height="38">
+            </picture>
+>>>>>>> module4-task1
           </a>
         <!-- Логотип в хедере (Конец) -->
         <button class="page-header__menu-toggle page-header__menu-toggle--open" type="button">
@@ -48,7 +59,16 @@
         <div class="promo-block__wrapper">
           <h2 class="promo-block__title">Функциональное питание для котов</h2>
           <p class="promo-block__slogan">Занялся собой? Займись котом!</p>
-          <img class="promo-block__image" src="img/index-can-mobile@1x.png" alt="Cat Energy Pro- курица 500г" width="280" height="271">
+
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-desktop@2x.png 2x">
+            <img class="promo-block__image"
+               src="img/index-can-mobile@1x.png"
+               srcset="img/index-can-mobile@2x.png 2x"
+               alt="Cat Energy Pro- курица 500г">
+          </picture>
+
           <a class="promo-block__link button" href="form.html">Подобрать программу</a>
         </div>
       </article>
@@ -60,6 +80,7 @@
 
           <ul class="program-cards__list">
             <li class="program-cards__item">
+<<<<<<< HEAD
               <div class="program-cards__logo">
                 <svg class="program-cards__icon-cat-slim" width="50" height="52" version="1.1" id="icon-cat-slim" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70 97" xml:space="preserve">
                   <g>
@@ -79,6 +100,9 @@
                   </g>
                 </svg>
               </div>
+=======
+              <div class="program-cards__logo"></div>
+>>>>>>> module4-task1
               <h3 class="program-cards__title">Похудение</h3>
               <p class="program-cards__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="program-cards__link" href="catalog-slim.html">
@@ -86,6 +110,7 @@
               </a>
             </li>
             <li class="program-cards__item">
+<<<<<<< HEAD
               <div class="program-cards__logo">
                 <svg class="program-cards__icon-cat-pro" version="1.1" id="icon-cat-pro" width="67" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 134 56" style="enable-background:new 0 0 134 56;" xml:space="preserve">
                 <g>
@@ -112,6 +137,9 @@
                 </g>
               </svg>
               </div>
+=======
+              <div class="program-cards__logo"></div>
+>>>>>>> module4-task1
               <h3 class="program-cards__title">Набор массы</h3>
               <p class="program-cards__description program-cards__description--pro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="program-cards__link" href="catalog-pro.html">
@@ -167,6 +195,7 @@
               </p>
             </div>
           </div>
+<<<<<<< HEAD
 
           <div class="example__cat-wrapper">
           <div class="example__image-wrapper">
@@ -175,7 +204,41 @@
             </div>
             <div class="example__image-after-wrapper">
               <img class="example__image-after" src="img/after-mobile@1x.png" width="320" height="240" alt="Изображение кота после">
+=======
+
+          <div class="example__cat-wrapper">
+          <div class="example__image-wrapper">
+            <div class="example__image-before-wrapper">
+
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="example__image-before"
+                   src="img/before-mobile@1x.png"
+                   srcset="img/before-mobile@2x.png 2x"
+                   alt="Изображение кота до">
+              </picture>
             </div>
+            <div class="example__image-after-wrapper">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+
+                <img class="example__image-after"
+                     src="img/after-mobile@1x.png"
+                     srcset="img/after-mobile@2x.png 2x"
+                     alt="Изображение кота после">
+              </picture>
+            </div>
+          </div>
+
+          <div class="example__progress-bar">
+            <button class="example__before" type="button">Было</button>
+            <div class="example__bar">
+              <button class="example__scale" type="button"></button>
+>>>>>>> module4-task1
+            </div>
+            <button class="example__after" type="button">Стало</button>
           </div>
 
           <div class="example__progress-bar">
@@ -185,6 +248,7 @@
             </div>
             <button class="example__after" type="button">Стало</button>
           </div>
+        </div>
         </div>
         </div>
       </section>
@@ -246,7 +310,11 @@
         <div class="page-footer__copyrights copyrights">
           <a class="copyrights__link" href="#">HTML Academy</a>
 
+<<<<<<< HEAD
           <a class="copyright__logo" href="#">
+=======
+          <a class="copyrights__logo" href="#">
+>>>>>>> module4-task1
             <!-- Будет SVG -->
           </a>
         </div>

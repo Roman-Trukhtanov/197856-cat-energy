@@ -2,6 +2,19 @@
   padding-top: 15px;
 }
 
+<<<<<<< HEAD
+=======
+.page-catalog__title {
+  margin-bottom: 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .products-catalog__title {
+    margin-bottom: 85px;
+  }
+}
+
+>>>>>>> module4-task1
 @media (min-width: $desktop-width) {
   .page-catalog__wrapper {
     padding-top: 32px;
