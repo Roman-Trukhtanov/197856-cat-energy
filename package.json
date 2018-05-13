@@ -38,6 +38,7 @@
     "node": "8.11"
   },
   "dependencies": {
+    "cwebp": "^2.0.2",
     "normalize.scss": "^0.1.0"
   }
 }

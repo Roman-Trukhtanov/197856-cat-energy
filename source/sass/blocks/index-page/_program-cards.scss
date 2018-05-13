@@ -137,3 +137,44 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .program-cards {
+    margin-bottom: 45px;
+  }
+  .program-cards__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .program-cards__item {
+    padding-top: 38px;
+    padding-left: 50px;
+    padding-right: 55px;
+    width: 570px;
+  }
+
+  .program-cards__logo {
+    margin-right: 24px;
+    position: static;
+
+    width: 140px;
+    height: 110px;
+
+    background-color: #68b738;
+  }
+
+  .program-cards__description {
+    margin-bottom: 7px;
+    margin-left: 2px;
+    padding-top: 38px;
+  }
+
+  .program-cards__description--pro {
+    width: auto;
+  }
+
+  .program-cards__link {
+    margin-left: 3px;
+  }
+}

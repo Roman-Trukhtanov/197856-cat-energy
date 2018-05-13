@@ -111,9 +111,26 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    position: relative;
+
     width: 1300px;
     padding-top: 62px;
     padding-left: 40px;
     padding-right: 40px;
+
+    &--index-page::before {
+      content: "";
+
+      position: absolute;
+      right: -70px;
+      top: 0;
+
+      width: 720px;
+      height: 696px;
+
+      background-color: $bg-green;
+
+      z-index: -2;
+    }
   }
 }

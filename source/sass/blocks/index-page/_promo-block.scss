@@ -103,3 +103,27 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo-block {
+    min-height: 598px;
+    padding-top: 66px;
+  }
+
+  .promo-block__wrapper {
+    padding-left: 81px;
+  }
+
+  .promo-block__slogan {
+    margin-bottom: 54px;
+  }
+
+  .promo-block__image {
+    top: 0;
+    right: 350px;
+  }
+
+  .promo-block__link {
+    padding-right: 5px;
+  }
+}
