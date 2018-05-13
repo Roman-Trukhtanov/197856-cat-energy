@@ -1,0 +1,9 @@
+.page-catalog__wrapper {
+  padding-top: 15px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-catalog__wrapper {
+    padding-top: 32px;
+  }
+}
