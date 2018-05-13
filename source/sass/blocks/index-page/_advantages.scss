@@ -1,0 +1,177 @@
+.advantages {
+  margin-bottom: 23px;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+
+  color: $title-color;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  list-style: none;
+}
+
+.advantages__item {
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    margin-right: 20px;
+
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+
+    display: block;
+    background-color: $bg-green;
+  }
+}
+
+.advantages__description {
+  margin: 0;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    margin-bottom: 102px;
+  }
+
+  .advantages__title {
+    margin-bottom: 72px;
+    font-size: 60px;
+  }
+
+  .advantages__list {
+    flex-direction: row;
+  }
+
+  .advantages__item {
+    margin-bottom: 133px;
+
+    position: relative;
+
+    width: 250px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &::before {
+      margin-bottom: 32px;
+
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: "1";
+
+      position: absolute;
+      top: -40px;
+      right: 20px;
+
+      font-size: 281px;
+      line-height: 281px;
+
+      color: #f2f2f2;
+
+      z-index: -1;
+    }
+
+    &--food::after {
+      content: "1";
+    }
+
+    &--powder::after {
+      content: "2";
+      right: 5px;
+    }
+
+    &--efficacy::after {
+      content: "3";
+      right: 2px;
+    }
+
+    &--results::after {
+      content: "4";
+      right: 2px;
+    }
+  }
+
+  .advantages__item:nth-child(2n-1) {
+    margin-right: 135px;
+  }
+
+  .advantages__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .advantages__item:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+
+  .advantages__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    margin-bottom: 0;
+  }
+
+  .advantages__list {
+    margin-left: -80px;
+  }
+
+  .advantages__item:nth-child(2n-1) {
+    margin-bottom: 80px;
+    margin-right: 0;
+  }
+
+  .advantages__item {
+    width: 245px;
+    margin-bottom: 80px;
+    margin-left: 80px;
+
+    &--food::after {
+      right: 17px;
+    }
+
+    &--powder::after {
+      right: 0;
+    }
+
+    &--efficacy::after {
+      right: -4px;
+    }
+
+    &--results::after {
+      right: -4px;
+    }
+  }
+
+  .advantages__item:last-child {
+    margin-bottom: 80px;
+  }
+}

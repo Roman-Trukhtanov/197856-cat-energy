@@ -1,0 +1,31 @@
+.copyrights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyrights__link {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+
+  color: #444444;
+}
+
+.copyright__logo {
+  //Временные стили для иконки
+  display: block;
+  width: 27px;
+  height: 34px;
+  background-color: #666666;
+  //-----------
+}
+
+@media (min-width: $tablet-width) {
+  .copyrights__link {
+    margin-right: 22px;
+    margin-bottom: 5px;
+  }
+}
