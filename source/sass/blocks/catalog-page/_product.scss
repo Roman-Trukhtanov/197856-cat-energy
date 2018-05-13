@@ -72,8 +72,16 @@
   }
 
   .product__image-link {
+    display: flex;
+    align-items: flex-end;
+
     margin-top: -80px;
+    width: 324px;
     height: 208px;
+  }
+
+  .product__img {
+    width: 100%;
   }
 
   .product__description {
@@ -121,6 +129,10 @@
 
 @media (min-width: $desktop-width) {
   .product {
+    width: 245px;
+  }
+
+  .product__image-link {
     width: 245px;
   }
 }
