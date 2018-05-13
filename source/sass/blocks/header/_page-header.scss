@@ -111,12 +111,15 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    position: relative;
-
-    width: 1300px;
     padding-top: 62px;
     padding-left: 40px;
     padding-right: 40px;
+    margin-bottom: 44px;
+
+    position: relative;
+
+    width: 1300px;
+
 
     &--index-page::before {
       content: "";
@@ -132,5 +135,17 @@
 
       z-index: -2;
     }
+  }
+
+  .page-header__logo {
+    margin-top: -9px;
+    padding: 0;
+    width: 202px;
+    height: 59px;
+  }
+
+  .page-header__logo-image {
+    width: 100%;
+    height: auto;
   }
 }
