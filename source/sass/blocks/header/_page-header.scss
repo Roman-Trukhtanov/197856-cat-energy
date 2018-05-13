@@ -135,9 +135,9 @@
       z-index: -2;
 
       background-image: url("../img/index-background-desktop@1x.jpg");
-      background-size: auto,680px auto;
+      background-size: auto, 680px auto;
       background-repeat: no-repeat;
-      background-position: left,right top;
+      background-position: left, right top;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
