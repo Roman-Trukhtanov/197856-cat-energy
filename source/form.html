@@ -14,7 +14,14 @@
       <div class="page-header__wrapper">
         <!-- Логотип в хедере (Начало) -->
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/svg/logo-mobile.svg" alt="Cat Energy - логотип" width="191" height="38"> <!-- Вопрос: вместо img скорей всего будет инлайновый SVG? -->
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/svg/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+            <img class="page-header__logo-image"
+                 src="img/svg/logo-mobile.svg"
+                 alt="Cat Energy - логотип"
+                 width="191" height="38">
+          </picture>
         </a>
         <!-- Логотип в хедере (Конец) -->
         <button class="page-header__menu-toggle page-header__menu-toggle--open" type="button">
@@ -242,7 +249,7 @@
         <div class="page-footer__copyrights copyrights">
           <a class="copyrights__link" href="#">HTML Academy</a>
 
-          <a class="copyright__logo" href="#">
+          <a class="copyrights__logo" href="#">
             <!-- Будет SVG -->
           </a>
         </div>
