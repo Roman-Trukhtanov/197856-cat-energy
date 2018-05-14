@@ -31,6 +31,8 @@
   margin: 0;
   margin-bottom: 24px;
 
+  width: 275px;
+
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -113,6 +115,7 @@
 .example__image-wrapper {
   margin: 0 auto;
   margin-bottom: 30px;
+  margin-left: -20px;
 
   position: relative;
 
@@ -128,8 +131,6 @@
 
 .example__progress-bar {
   margin: 0 auto;
-
-  width: 320px;
 
   display: flex;
   justify-content: center;
@@ -223,7 +224,7 @@
 
   .example__wrapper {
     background-color: $bg-white;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .example__title {
@@ -241,6 +242,8 @@
   .example__description {
     margin-right: 20px;
     margin-bottom: 53px;
+
+    width: auto;
 
     font-size: 16px;
     line-height: 24px;
@@ -293,13 +296,40 @@
   }
 
   .example__image-wrapper {
+    margin: 0;
     width: 708px;
     height: 517px;
   }
 
+  .example__image-before-wrapper {
+    position: relative;
+    width: 355px;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  .example__image-before {
+    max-width: none;
+    margin-top: 22px;
+    margin-left: 16px;
+  }
+
+  .example__image-after-wrapper {
+    overflow: hidden;
+    width: 353px;
+    display: flex;
+    justify-content: flex-end;
+    top: 22px;
+    right: 0;
+  }
+
+  .example__image-after {
+    max-width: none;
+  }
+
   .example__progress-bar {
     margin-top: 40px;
-    margin-left: 80px;
+    margin-left: 69px;
 
     width: 570px;
   }
@@ -376,7 +406,7 @@
 @media (min-width: $desktop-width) {
   .example {
     padding-top: 45px;
-    padding-bottom: 35px;
+    padding-bottom: 45px;
     border: none;
 
     background-image: linear-gradient(to right, #f2f2f2 67.1%, #eaeaea 67.1%);
@@ -419,12 +449,30 @@
     background-color: #f2f2f2;
   }
 
+  .example__image-wrapper {
+    width: 690px;
+  }
+
   .example__cat-wrapper {
     position: absolute;
     top: -54px;
-    right: -18px;
+    right: 0;
+
 
     background-color: transparent;
+  }
+
+  .example__image-before {
+    margin: 0;
+  }
+
+  .example__image-before-wrapper {
+    width: 360px;
+  }
+
+  .example__image-after-wrapper {
+    width: 330px;
+    top: 0;
   }
 
   .example__cost {
@@ -446,7 +494,16 @@
     flex-shrink: 0;
   }
 
+  .example__progress-bar {
+    margin-top: 41px;
+    margin-left: 80px;
+  }
+
   .example__bar {
     margin-bottom: 7px;
+  }
+
+  .example__scale {
+    left: 197px;
   }
 }
