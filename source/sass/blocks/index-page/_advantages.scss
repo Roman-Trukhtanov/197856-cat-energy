@@ -133,7 +133,7 @@
       z-index: -1;
     }
 
-    &--food::after {
+    &--leaf::after {
       content: "1";
     }
 
@@ -142,12 +142,12 @@
       right: 5px;
     }
 
-    &--efficacy::after {
+    &--dining::after {
       content: "3";
       right: 2px;
     }
 
-    &--results::after {
+    &--clock::after {
       content: "4";
       right: 2px;
     }
@@ -190,7 +190,7 @@
     margin-bottom: 80px;
     margin-left: 80px;
 
-    &--food::after {
+    &--leaf::after {
       right: 17px;
     }
 
@@ -198,11 +198,11 @@
       right: 0;
     }
 
-    &--efficacy::after {
+    &--dining::after {
       right: -4px;
     }
 
-    &--results::after {
+    &--clock::after {
       right: -4px;
     }
   }
