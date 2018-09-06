@@ -317,13 +317,14 @@
   .example__image-after-wrapper {
     overflow: hidden;
     width: 353px;
-    display: flex;
-    justify-content: flex-end;
+    display: block;
     top: 22px;
     right: 0;
   }
 
   .example__image-after {
+    position: relative;
+    left: -339px;
     max-width: none;
   }
 
@@ -360,6 +361,7 @@
     height: 34px;
 
     position: absolute;
+    top: -15px;
     left: 200px;
 
     border-radius: 50%;
@@ -409,7 +411,7 @@
     padding-bottom: 45px;
     border: none;
 
-    background-image: linear-gradient(to right, #f2f2f2 67.1%, #eaeaea 67.1%);
+    background-image: linear-gradient(to right, #f2f2f2 67.1%, #ffffff);
     background-position: 0 181px;
     background-repeat: no-repeat;
 
@@ -475,6 +477,10 @@
     top: 0;
   }
 
+  .example__image-after {
+    left: -360px;
+  }
+
   .example__cost {
     margin-bottom: 0;
 
@@ -504,6 +510,7 @@
   }
 
   .example__scale {
+    top: -15px;
     left: 197px;
   }
 }

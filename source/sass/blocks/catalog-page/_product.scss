@@ -61,7 +61,6 @@
 
     width: 324px;
 
-    align-items: center;
     flex-direction: column;
 
     background-color: $bg-grey;
@@ -75,6 +74,7 @@
     display: flex;
     align-items: flex-end;
 
+    margin-left: -38px;
     margin-top: -80px;
     width: 324px;
     height: 208px;

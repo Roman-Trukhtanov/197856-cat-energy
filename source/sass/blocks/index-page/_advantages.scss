@@ -30,6 +30,7 @@
 
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 
   &::before {
     content: "";
@@ -103,6 +104,8 @@
   }
 
   .advantages__item {
+    display: block;
+
     margin-bottom: 133px;
 
     position: relative;
@@ -186,9 +189,9 @@
   }
 
   .advantages__item {
-    width: 245px;
     margin-bottom: 80px;
     margin-left: 80px;
+    width: 245px;
 
     &--leaf::after {
       right: 17px;
