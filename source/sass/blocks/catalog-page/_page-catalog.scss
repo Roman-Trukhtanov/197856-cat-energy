@@ -3,11 +3,11 @@
 }
 
 .page-catalog__title {
-  margin-bottom: 84px;
+  margin-bottom: 27px;
 }
 
 @media (min-width: $tablet-width) {
-  .products-catalog__title {
+  .page-catalog__title {
     margin-bottom: 85px;
   }
 }
@@ -20,6 +20,10 @@
 
 
 @media (min-width: $desktop-width) {
+  .page-catalog__title {
+    margin-bottom: 84px;
+  }
+
   .page-catalog__wrapper {
     padding-top: 32px;
   }
